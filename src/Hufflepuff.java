@@ -1,9 +1,9 @@
 public class Hufflepuff extends Hogwarts {
     public Hufflepuff(String name, int magicPower, int distanceTransgression, int industriousness, int loyalty, int honesty) {
         super(name, magicPower, distanceTransgression);
-        this.industriousness = industriousness;
-        this.loyalty = loyalty;
-        this.honesty = honesty;
+        Hufflepuff.industriousness = industriousness;
+        Hufflepuff.loyalty = loyalty;
+        Hufflepuff.honesty = honesty;
     }
 
     private static int industriousness; // трудолюбие
@@ -21,19 +21,6 @@ public class Hufflepuff extends Hogwarts {
     public static int getHonesty() {
         return honesty;
     }
-
-    public void setIndustriousness(int industriousness) {
-        this.industriousness = industriousness;
-    }
-
-    public void setLoyalty(int loyalty) {
-        this.loyalty = loyalty;
-    }
-
-    public void setHonesty(int honesty) {
-        this.honesty = honesty;
-    }
-
     @Override
     public String toString() {
         return "Hufflepuff{" +
@@ -41,5 +28,12 @@ public class Hufflepuff extends Hogwarts {
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty +
                 '}';
+    }
+    public void compare(Hufflepuff hufflepuff) {
+        if (industriousness + loyalty + honesty > getIndustriousness() + getLoyalty() + getHonesty()) {
+            System.out.println(name + " сильнее " + getName());
+        } else {
+            System.out.println(getName() + " сильнее " + name);
+        }
     }
 }

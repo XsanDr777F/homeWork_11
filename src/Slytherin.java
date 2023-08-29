@@ -1,9 +1,9 @@
 public class Slytherin extends Hogwarts {
     public Slytherin(String name, int magicPower, int distanceTransgression, int cunning, int determination, int ambition) {
         super(name, magicPower, distanceTransgression);
-        this.cunning = cunning;
-        this.determination = determination;
-        this.ambition = ambition;
+        Slytherin.cunning = cunning;
+        Slytherin.determination = determination;
+        Slytherin.ambition = ambition;
     }
 
     private static int cunning; // хитрость
@@ -21,19 +21,6 @@ public class Slytherin extends Hogwarts {
     public static int getAmbition() {
         return ambition;
     }
-
-    public void setCunning(int cunning) {
-        this.cunning = cunning;
-    }
-
-    public void setDetermination(int determination) {
-        this.determination = determination;
-    }
-
-    public void setAmbition(int ambition) {
-        this.ambition = ambition;
-    }
-
     @Override
     public String toString() {
         return "Slytherin{" +
@@ -41,5 +28,12 @@ public class Slytherin extends Hogwarts {
                 ", determination=" + determination +
                 ", ambition=" + ambition +
                 '}';
+    }
+    public void compare(Slytherin slytherin) {
+        if (cunning + determination + ambition > getCunning() + getDetermination() + getAmbition()) {
+            System.out.println(name + " сильнее " + getName());
+        } else {
+            System.out.println(getName() + " сильнее " + name);
+        }
     }
 }
