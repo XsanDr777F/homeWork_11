@@ -1,18 +1,14 @@
 public class Hogwarts {
 
     public Hogwarts(String name, int magicPower, int distanceTransgression) {
-
+        this.name = name;
+        this.magicPower = magicPower;
+        this.distanceTransgression = distanceTransgression;
     }
 
     protected static String name; // имя
     protected static int magicPower; // магические силы
     protected static int distanceTransgression; // дистанция трансгрессии
-
-    public Hogwarts() {
-        this.name = name;
-        this.magicPower = magicPower;
-        this.distanceTransgression = distanceTransgression;
-    }
 
     public static String getName() {
         return name;
@@ -42,4 +38,4 @@ public class Hogwarts {
                 ", distanceTransgression=" + distanceTransgression +
                 '}';
     }
-    }
+}
