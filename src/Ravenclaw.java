@@ -24,6 +24,9 @@ public class Ravenclaw extends Hogwarts {
     @Override
     public String toString() {
         return "Ravenclaw{" +
+                "name='" + getName() +
+                ", magicPower=" + getMagicPower() +
+                ", distanceTransgression=" + getDistanceTransgression() +
                 "wisdom=" + wisdom +
                 ", wit=" + wit +
                 ", creativity=" + creativity +
@@ -31,9 +34,9 @@ public class Ravenclaw extends Hogwarts {
     }
     public void compare(Ravenclaw ravenclaw) {
         if (wisdom + wit + creativity > getWisdom() + getWit() + getCreativity()) {
-            System.out.println(name + " сильнее " + getName());
+            System.out.println(ravenclaw.getName() + " сильнее " + getName());
         } else {
-            System.out.println(getName() + " сильнее " + name);
+            System.out.println(getName() + " сильнее " + ravenclaw.getName());
         }
     }
 }

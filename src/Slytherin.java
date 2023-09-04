@@ -24,16 +24,19 @@ public class Slytherin extends Hogwarts {
     @Override
     public String toString() {
         return "Slytherin{" +
-                "cunning=" + cunning +
-                ", determination=" + determination +
-                ", ambition=" + ambition +
+                "name='" + getName() +
+                ", magicPower=" + getMagicPower() +
+                ", distanceTransgression=" + getDistanceTransgression() +
+                "cunning=" + getCunning() +
+                ", determination=" + getDetermination() +
+                ", ambition=" + getAmbition() +
                 '}';
     }
     public void compare(Slytherin slytherin) {
         if (cunning + determination + ambition > getCunning() + getDetermination() + getAmbition()) {
-            System.out.println(name + " сильнее " + getName());
+            System.out.println(slytherin.getName() + " сильнее " + getName());
         } else {
-            System.out.println(getName() + " сильнее " + name);
+            System.out.println(getName() + " сильнее " + slytherin.getName());
         }
     }
 }

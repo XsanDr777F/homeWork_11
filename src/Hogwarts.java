@@ -1,24 +1,22 @@
 public class Hogwarts {
+    private String name;// имя
+    private int magicPower;// магические силы
+    private int distanceTransgression;// дистанция трансгрессии
 
     public Hogwarts(String name, int magicPower, int distanceTransgression) {
-        Hogwarts.name = name;
-        Hogwarts.magicPower = magicPower;
-        Hogwarts.distanceTransgression = distanceTransgression;
+        this.name = name;
+        this.magicPower = magicPower;
+        this.distanceTransgression = distanceTransgression;
     }
-
-    protected static String name; // имя
-    protected static int magicPower; // магические силы
-    protected static int distanceTransgression; // дистанция трансгрессии
-
-    public static String getName() {
+    public String getName() {
         return name;
     }
 
-    public static int getMagicPower() {
+    public int getMagicPower() {
         return magicPower;
     }
 
-    public static int getDistanceTransgression() {
+    public int getDistanceTransgression() {
         return distanceTransgression;
     }
     @Override
@@ -36,4 +34,17 @@ public class Hogwarts {
                 System.out.println(hogwarts.getName() + " сильнее " + name);
             }
         }
+
+    public void studentDescription() {//описание студента
+        System.out.println("Имя - " + name + ", witchcraft " + getMagicPower() +
+                ", transgression " + getDistanceTransgression());
+    }
+
+    private int compareMagicPower(Hogwarts student) {
+        return magicPower - student.getMagicPower();
+    }
+
+    private int compareDisTrans(Hogwarts student) {
+        return distanceTransgression - student.getDistanceTransgression();
+    }
 }

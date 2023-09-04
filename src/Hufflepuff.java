@@ -24,6 +24,9 @@ public class Hufflepuff extends Hogwarts {
     @Override
     public String toString() {
         return "Hufflepuff{" +
+                "name='" + getName() +
+                ", magicPower=" + getMagicPower() +
+                ", distanceTransgression=" + getDistanceTransgression() +
                 "industriousness=" + industriousness +
                 ", loyalty=" + loyalty +
                 ", honesty=" + honesty +
@@ -31,9 +34,9 @@ public class Hufflepuff extends Hogwarts {
     }
     public void compare(Hufflepuff hufflepuff) {
         if (industriousness + loyalty + honesty > getIndustriousness() + getLoyalty() + getHonesty()) {
-            System.out.println(name + " сильнее " + getName());
+            System.out.println(hufflepuff.getName() + " сильнее " + getName());
         } else {
-            System.out.println(getName() + " сильнее " + name);
+            System.out.println(getName() + " сильнее " + hufflepuff.getName());
         }
     }
 }

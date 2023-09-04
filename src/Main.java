@@ -23,9 +23,26 @@ public class Main {
                 hogwarts[i].compare(hogwarts[j]);
             }
         }
+        System.out.println();
         Gryffindor potter = (Gryffindor) hogwarts[0];
-        Gryffindor granger = (Gryffindor) hogwarts[1];
+        Gryffindor uizli = (Gryffindor) hogwarts[1];
+        Gryffindor granger = (Gryffindor) hogwarts[2];
 
-        potter.compare(granger);
+        Slytherin malfoi = (Slytherin) hogwarts [3];
+        Slytherin montegry = (Slytherin) hogwarts [4];
+        Slytherin goil = (Slytherin) hogwarts [5];
+
+        Ravenclaw chang = (Ravenclaw) hogwarts [6];
+        Ravenclaw patil = (Ravenclaw) hogwarts [7];
+        Ravenclaw belbi = (Ravenclaw) hogwarts [8];
+
+        Hufflepuff smith = (Hufflepuff) hogwarts [9];
+        Hufflepuff diggory = (Hufflepuff) hogwarts [10];
+        Hufflepuff finch = (Hufflepuff) hogwarts [11];
+
+
+        potter.compare(uizli);
+        System.out.println();
+        malfoi.studentDescription();
     }
 }
