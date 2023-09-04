@@ -1,5 +1,4 @@
 public class Gryffindor extends Hogwarts {
-
     public Gryffindor(String name, int magicPower, int distanceTransgression, int nobility, int honor, int brave) {
         super(name, magicPower, distanceTransgression);
         this.nobility = nobility;
@@ -7,18 +6,17 @@ public class Gryffindor extends Hogwarts {
         this.brave = brave;
     }
 
-    private static int nobility; // благородство
-    private static int honor; // честь
-    private static int brave; // храбрость
-    public static int getNobility() {
+    private int nobility; // благородство
+    private int honor; // честь
+    private int brave; // храбрость
+
+    public  int getNobility() {
         return nobility;
     }
-
-    public static int getHonor() {
+    public  int getHonor() {
         return honor;
     }
-
-    public static int getBrave() {
+    public  int getBrave() {
         return brave;
     }
 

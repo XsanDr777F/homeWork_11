@@ -1,24 +1,24 @@
 public class Ravenclaw extends Hogwarts {
     public Ravenclaw(String name, int magicPower, int distanceTransgression, int wisdom, int wit, int creativity) {
         super(name, magicPower, distanceTransgression);
-        Ravenclaw.wisdom = wisdom;
-        Ravenclaw.wit = wit;
-        Ravenclaw.creativity = creativity;
+        this.wisdom = wisdom;
+        this.wit = wit;
+        this.creativity = creativity;
     }
 
-    private static int wisdom; // мудрость
-    private static int wit; // остроумие
-    private static int creativity; // креативность
+    private  int wisdom; // мудрость
+    private  int wit; // остроумие
+    private  int creativity; // креативность
 
-    public static int getWisdom() {
+    public  int getWisdom() {
         return wisdom;
     }
 
-    public static int getWit() {
+    public  int getWit() {
         return wit;
     }
 
-    public static int getCreativity() {
+    public  int getCreativity() {
         return creativity;
     }
     @Override

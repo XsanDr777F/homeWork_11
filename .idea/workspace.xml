@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="af64346a-e563-4666-bbd5-4fb84c592b18" name="Changes" comment="first commit">
+    <list default="true" id="af64346a-e563-4666-bbd5-4fb84c592b18" name="Changes" comment="complite">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Gryffindor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Gryffindor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Hogwarts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hogwarts.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Hufflepuff.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Hufflepuff.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Ravenclaw.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Ravenclaw.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Slytherin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Slytherin.java" afterDir="false" />
     </list>
@@ -117,7 +115,15 @@
       <option name="project" value="LOCAL" />
       <updated>1693339374717</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="complite">
+      <option name="closed" value="true" />
+      <created>1693819034887</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1693819034887</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -145,6 +151,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
+    <MESSAGE value="complite" />
+    <option name="LAST_COMMIT_MESSAGE" value="complite" />
   </component>
 </project>

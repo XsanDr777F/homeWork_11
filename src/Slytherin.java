@@ -1,24 +1,24 @@
 public class Slytherin extends Hogwarts {
     public Slytherin(String name, int magicPower, int distanceTransgression, int cunning, int determination, int ambition) {
         super(name, magicPower, distanceTransgression);
-        Slytherin.cunning = cunning;
-        Slytherin.determination = determination;
-        Slytherin.ambition = ambition;
+        this.cunning = cunning;
+        this.determination = determination;
+        this.ambition = ambition;
     }
 
-    private static int cunning; // хитрость
-    private static int determination;// решительность
-    private static int ambition;// амбициозность
+    private  int cunning; // хитрость
+    private  int determination;// решительность
+    private  int ambition;// амбициозность
 
-    public static int getCunning() {
+    public  int getCunning() {
         return cunning;
     }
 
-    public static int getDetermination() {
+    public  int getDetermination() {
         return determination;
     }
 
-    public static int getAmbition() {
+    public  int getAmbition() {
         return ambition;
     }
     @Override
